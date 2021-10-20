@@ -7,18 +7,28 @@ $light-grayish-blue: hsl(223, 64%, 98%);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 $lightbox-background: hsla(0, 0%, 0%, .75);
+$divider-color: hsl(255, 9%, 91%);
 
 body {
     font-size: 16px;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-#header {
-    border-bottom: 1px solid $dark-grayish-blue;
-    .nav {
+header {
+    border-bottom: 1px solid $divider-color;
+    nav {
         color:$dark-grayish-blue;
         &:hover{
             border-bottom: 4px solid $orange;
+            cursor: pointer;
+        }
+    }
+    #avatar{
+        border:2px solid transparent;
+        border-radius: 50%;
+        &:hover {
+            border-color: $orange;
+            cursor: pointer;
         }
     }
 }
