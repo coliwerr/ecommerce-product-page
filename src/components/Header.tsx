@@ -6,6 +6,7 @@ import shoppingCart from "../assets/icon-cart.svg";
 const Header = () => {
     return (
       <header
+        id="app-header"
         style={{
           display: "flex",
           justifyContent: "space-between",
